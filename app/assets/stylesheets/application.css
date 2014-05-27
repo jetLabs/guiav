@@ -24,24 +24,14 @@
 {
 	background-color: #015187;
 	color: white;
+	height: 200px;
 	padding: 15px 0;
+	position: relative;
 	text-align: center;
 }
 
 #logo-header{
 	padding:  30px 0;
-}
-
-.social i
-{
-	border:1px solid;
-	-moz-border-radius: 50%; 
-  -webkit-border-radius: 50%; 
-  border-radius: 50%; 
-  width: 40px;
-  height: 40px;
-  padding: 6px 0px 0px 0px;
-  margin-left: 10px;
 }
 
 #footer a
@@ -55,3 +45,25 @@
 	color: #428bca;
 	text-decoration: none;
 }
+
+#logo-footer img
+{
+	position: absolute;
+	left: 20px;
+	top: 66px;
+}
+
+.logos ul
+{
+	text-align: left;
+	position: absolute;
+	right: 63px;
+	top: 27px;
+}
+
+.logos li
+{
+	display: block;
+	padding: 5px;
+}
+
