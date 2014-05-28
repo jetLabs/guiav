@@ -15,7 +15,7 @@
 	<div id="wrapper">
 		<div id="header">
 			<div id="logo-header">
-				<%= image_tag "logo.png" , height: '220' %></a> 
+				<%= image_tag "logo.png" , height: '220' %>
 			</div>
 			 <div id="navigation-bar">
 			 	<nav class="navbar navbar-custom" role="navigation">
@@ -76,25 +76,41 @@
 
 		<%= yield %>
 
-		<div id="footer">
-			<div id="logo-footer">
-				<%= image_tag "logochico.png" , height: '80' %></a> 
+		<div id="footer" class="centered">
+			<div id="image">
+				<%= image_tag "logo.png" , height: '80' %>
 			</div>
-
-			<div class="logos">
-				<ul>
-					<li><i class="fa fa-location-arrow fa-2x"></i> Av. Agraciada 2541 Of. 101 </li>
-					<li><i class="fa fa-phone fa-2x" ></i> 2203 9897 </li>
-					<li><a href="mailto:info@guiav.com.uy"><i class="fa fa-envelope fa-2x" ></i> info@guiav.com.uy </a></li>
-					<li><a href="#"><i class="fa fa-facebook fa-2x" ></i> /GuiaVUruguay </a></li>
-				</ul>
+			<div id="contact">
+				
 			</div>
+			<div id="map_canvas" class="fl"></div>
+			<div id="contact" class="fr">
+				<div class="row">
+				  <div class="col-md-6"><a href="https://www.facebook.com/guiavet" target="_blank"><i class="fa fa-facebook fa-2x"></a></i></div>
+				  <div class="col-md-6">/guiavet</div>
+				</div>
+			</div>
+			<div class="clear"></div>
 
+			<p class="copy">© 2014 GuiaV Uruguay. All rights reserved.</p>
 		</div>
 
 	</div>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(-34.885685,-56.186206),
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </body>
 </html>
