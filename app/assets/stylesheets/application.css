@@ -105,15 +105,19 @@
 	font-size: 11px;
 }
 
-#map_canvas {
+#map-canvas {
         width: 800px;
         height: 400px;
         margin-left: 100px;
       }
 
  #contact{
- 	width:150px;
- 	margin-right: 500px;
+ 	width:350px;
+ 	margin-right: 300px;
+ }
+
+ #footer-content{
+	margin-top: 50px;
  }
 
 .clear{
@@ -129,8 +133,18 @@
 }
 
 .row{
-  	float:none;
-    display:inline-block;
-    vertical-align:middle;
-    margin-right:-4px;
+	text-align: left;
   }
+
+.siteNotice{
+	color: #015187 ;
+	width: 200px;
+	text-align: left;
+  }
+
+
+.firstHeading{
+	color: #015187 ;
+	font-size: 20px ;
+	font-weight: bold;
+}
