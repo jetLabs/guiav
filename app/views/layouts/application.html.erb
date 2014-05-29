@@ -25,7 +25,7 @@
 				  <div class="container-fluid">
 				    <!-- Brand and toggle get grouped for better mobile display -->
 				    <div class="navbar-header">
-				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#">
 				        <span class="sr-only">Toggle navigation</span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
@@ -101,7 +101,9 @@
 
 						
 				</div>
-			
+				<div id="arrow-up">
+					<a href="#"><i class="fa fa-arrow-circle-up fa-4x"></i></a>
+				</div>
 			</div>
 		</div>
 		<div id="copyright">
@@ -109,45 +111,8 @@
 		</div>
 
 	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script>
-      function initialize() {
-        var myLatlng = new google.maps.LatLng(-34.885148, -56.193074);
-        var mapOptions = {
-          center: myLatlng,
-          zoom: 14,
-          scaleControl: false,
-          scrollwheel: false,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-
-        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-        
-
-	  var contentString =
-	      '<div class="siteNotice">'+
-	      
-	      '<p class="firstHeading ">GUIA V</p>'+
-	      '<div class="bodyContent">'+
-	      '<p>Av. Agraciada 2541 Of. 101 ' +
-	      
-	      '</p>'+
-	      '</div>'+
-	      '</div>';
-
-	  var infowindow = new google.maps.InfoWindow({
-	      content: contentString
-	  });
-
-	  var marker = new google.maps.Marker({
-	      position: myLatlng,
-	      map: map,
-	      title: 'GUIA V'
-	  });
-    infowindow.open(map,marker);
-	}
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+    
 </body>
 </html>

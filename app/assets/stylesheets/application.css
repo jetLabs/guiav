@@ -127,6 +127,18 @@
 	margin-top: 50px;
  }
 
+ #arrow-up i{
+ 	position: fixed;
+ 	right: 50px;
+ 	bottom: 60px;
+ 	color: #fff ;
+ 	opacity: 0.7;
+ }
+
+ #arrow-up i:hover{
+ 	opacity: 1;
+ }
+
 .clear{
 	clear:both;
 }
