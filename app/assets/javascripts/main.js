@@ -4,20 +4,20 @@ $(window).load(function(){
 	$('.dropdown-toggle').dropdown();
 
 	// hide #back-top first
-	if ($(this).scrollTop() < 630){
+	if ($(this).scrollTop() < 933){
 		$("#arrow-up").hide();
 	}
 	
 	// fade in #back-top
 	$(function () {
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 632) {
+			if ($(this).scrollTop() > 933) {
 				$('#arrow-up').fadeIn();
 			} else {
 				$('#arrow-up').fadeOut();
 			}
 
-			if ($(this).scrollTop() >= 806 && $(this).scrollTop() <= 1178 )  {
+			if ($(this).scrollTop() >= 1078 && $(this).scrollTop() <= 1484 )  {
 				$('#arrow-up i').css("color","#015187");
 			} else {
 				$('#arrow-up i').css("color","#fff");
