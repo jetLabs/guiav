@@ -7,7 +7,10 @@
   <%= csrf_meta_tags %>
   <%= favicon_link_tag 'favicon.ico' %>
 
-  <!-- bootstrap -->
+  <!-- fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+
+  
 
 	
 </head>
@@ -77,44 +80,45 @@
 		<%= yield %>
 
 		<div id="footer" class="centered">
-			<div id="image">
-				<%= image_tag "logo.png" , height: '80' %>
-			</div>
+			
 			<div id="footer-content">
 				
+				<h1 id="contact-us">CONTACT US</h1>
+				<div id="map-canvas"></div>
+				<div id="logo-footer">
+					<%= image_tag "logo.png" , height: '80' %>
+				</div>
+				<div id="contact">
+						<ul>
+							<li class="fbook"><a href="https://www.facebook.com/guiavet" target="_blank"><i class="fa fa-facebook fa-1x"></i></a></li>
+							<li class="mail"><a href="mailto:info@guiav.com.uy"><i class="fa fa-envelope-o fa-1x"></i></a></li>
+						</ul>
+						<br>
+						<p>info@guiav.com.uy<br>(+598) 2203 9897<br>
+						
+						Av. Agraciada 2541 Of. 101<br>
+						Montevideo, Uruguay</p>
+
+						
+				</div>
 			
-			<div id="map-canvas" class="fl"></div>
-			<div id="contact" class="fr">
-					<div class="row">
-					  <div class="col-md-1"><a href="https://www.facebook.com/guiavet" target="_blank"><i class="fa fa-facebook fa-1x"></i></div>
-					  <div class="col-md-8">/guiavetas</a></div>
-					</div>
-					<div class="row">
-					  <div class="col-md-1"><i class="fa fa-phone fa-1x"></i></div>
-					  <div class="col-md-10">(+598) 2203 9897</div>
-					</div>
-					<div class="row">
-					  <div class="col-md-1"><i class="fa fa-envelope-o fa-1x"></i></div>
-					  <div class="col-md-8">info@guiav.com.uy</div>
-					</div>
 			</div>
-			<div class="clear"></div>
-
-			<p class="copy">© 2014 GuiaV Uruguay. All rights reserved.</p>
-
 		</div>
-
-	</div>
+		<div id="copyright">
+			<p class="copy">© 2014 GuiaV Uruguay. All rights reserved.</p>
+		</div>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script>
       function initialize() {
-        var myLatlng = new google.maps.LatLng(-34.885685,-56.186206);
+        var myLatlng = new google.maps.LatLng(-34.885148, -56.193074);
         var mapOptions = {
           center: myLatlng,
           zoom: 14,
+          scaleControl: false,
+          scrollwheel: false,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
 

@@ -12,7 +12,8 @@
  *= require_tree .
  *= require font-awesome
  */
-* { padding:0; margin:0; }
+* { padding:0; margin:0; font-family: 'Lato', sans-serif; }
+
 
 
 #header{
@@ -24,7 +25,7 @@
 {
 	background-color: #015187;
 	color: white;
-	padding: 15px 0  5px  0;
+	padding: 15px 0  55px  0;
 	position: relative;
 	text-align: center;
 }
@@ -45,40 +46,26 @@
 	text-decoration: none;
 }
 
-#logo-footer img
-{
-	position: absolute;
-	left: 20px;
-	top: 66px;
-}
-
-.logos ul
-{
-	text-align: left;
-	position: absolute;
-	right: 63px;
-	top: 27px;
-}
-
-.logos li
-{
-	display: block;
-	padding: 5px;
-}
-
-.icons{
-	width: 90px;
+#contact i{
 	color: white;
 	border:1px solid;
-	padding: 30px 4px;
+	padding: 5px 9px;
 	-moz-border-radius: 50%; 
     -webkit-border-radius: 50%; 
     border-radius: 50%; 
     margin: 0 auto;
 }
 
-.icons:hover{
-	color: black;
+#contact .fbook i{
+	padding: 5px 9px;
+}
+
+#contact .mail i{
+	padding: 5px 5px;
+}
+
+#contact .fbook i:hover, #contact .mail i:hover{
+	color:  #015187;
 	background-color: white;
 	border-color: white !important;
 }
@@ -94,26 +81,46 @@
 	-webkit-transition: all .6s ease;
 }
 
-#footer #image{
-	margin-top: 20px;
+#logo-footer{
+	margin-top: 40px;
 	margin-bottom: 20px;
 }
 
 .copy{
-	margin-top: 30px;
-	opacity: 0.5;
+	opacity: 0.8;
+	color: white;
 	font-size: 11px;
+	margin-top: 5px;
+}
+
+#copyright{
+	background-color: #012e4d ;
+	padding: 8px 0;
+
+	text-align: center;
 }
 
 #map-canvas {
-        width: 800px;
+        width: 100%;
         height: 400px;
-        margin-left: 100px;
       }
 
  #contact{
- 	width:350px;
- 	margin-right: 300px;
+ 	width:200px;
+	text-align: center;
+	margin: 0 auto;
+ }
+
+ #contact li{
+ 	padding: 0 10px;
+ 	text-align: center;
+ 	display: inline;
+ 	text-decoration: none;
+ }
+
+ #contact-us{
+ 	margin-bottom: 50px;
+ 	font-size: 60px;
  }
 
  #footer-content{
