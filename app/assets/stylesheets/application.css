@@ -111,7 +111,7 @@
 	margin: 0 auto;
  }
 
- #contact li{
+ #contact li , #auspicios li{
  	padding: 0 10px;
  	text-align: center;
  	display: inline;
@@ -135,8 +135,20 @@
  	opacity: 0.7;
  }
 
+ .white{
+ 	color: #fff;
+ }
+
+ .blue{
+ 	color: #015187;
+ }
+
  #arrow-up i:hover{
  	opacity: 1;
+ }
+
+ #auspicios{
+ 	margin-top: 40px;
  }
 
 .clear{
@@ -151,9 +163,9 @@
 	float:left;
 }
 
-.row{
-	text-align: left;
-  }
+.opacity{
+	opacity: 0.7;
+}
 
 .siteNotice{
 	color: #015187 ;
