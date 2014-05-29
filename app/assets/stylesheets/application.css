@@ -179,3 +179,13 @@
 	font-size: 20px ;
 	font-weight: bold;
 }
+
+.animals{
+	display:inline-block;
+	text-decoration: none;
+}
+
+.animals img {
+        vertical-align: bottom;
+        display: table-cell;
+    }​
