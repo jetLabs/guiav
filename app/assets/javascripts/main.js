@@ -1,5 +1,8 @@
 $(window).load(function(){
 
+	// Dropdown activate
+	$('.dropdown-toggle').dropdown();
+
 	// hide #back-top first
 	if ($(this).scrollTop() < 630){
 		$("#arrow-up").hide();
