@@ -1,0 +1,1 @@
+!function(o){skrollr.init({render:function(e){console.log(e.curTop),console.log("footer top "+o("#footer").offset().top)}})}(jQuery);

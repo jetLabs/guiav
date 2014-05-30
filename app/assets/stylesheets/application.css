@@ -25,7 +25,6 @@
 {
 	background-color: #015187;
 	color: white;
-	padding: 15px 0  55px  0;
 	position: relative;
 	text-align: center;
 }
@@ -119,19 +118,20 @@
  }
 
  #contact-us{
- 	margin-bottom: 50px;
+ 	padding-top: 50px;
+ 	padding-bottom: 50px;
  	font-size: 60px;
  }
 
  #footer-content{
-	margin-top: 50px;
+	padding-bottom: 20px;
  }
 
  #arrow-up i{
  	position: fixed;
  	right: 50px;
  	bottom: 60px;
- 	color: #fff ;
+ 	color: #A9A9A9 ;
  	opacity: 0.7;
  }
 
