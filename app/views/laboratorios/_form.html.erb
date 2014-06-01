@@ -25,7 +25,29 @@
   </div>
   <div class="field">
     <%= f.label :departamento %><br>
-    <%= f.text_field :departamento %>
+    <%= f.select :departamento, 
+      ['Artigas',
+        'Canelones',
+        'Cerro',
+        'Colonia',
+        'Durazno',
+        'Flores',
+        'Florida',
+        'Lavalleja',
+        'Maldonado',
+        'Montevideo',
+        'Paysandú',
+        'Rivera',
+        'Rocha',
+        'Río Negro',
+        'Salto',
+        'San José',
+        'Soriano',
+        'Tacuarembó',
+        'Treinta y Tres'],
+      { include_blank: true }, 
+      {class: 'chz-select-departamento' }
+    %>
   </div>
   <div class="field">
     <%= f.label :telefono %><br>

@@ -53,3 +53,4 @@ gem 'therubyracer'
 gem 'pg', group: :production
 
 gem 'font-awesome-rails'
+gem 'chosen-rails'
