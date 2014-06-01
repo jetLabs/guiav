@@ -11,23 +11,23 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 
 </head>
-<body>
-	<div id="wrapper">
+<body id="body-login">
+	<div id="wrapper-login">
 		<!-- Login campos -->
-		<div class="centered col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-4">	
 			<%= image_tag "logochico.png" , height: '150' %>
 			
-			<% flash.each do |key, value| %>
+			<div id="content-login" class="well">
+				<% flash.each do |key, value| %>
 				<div class="alert alert-<%= key %>"><%= value %></div>
-			<% end %>
+				<% end %>
 
-			<%= form_for(:session, url: sessions_path) do |f| %>
-				<%= f.text_field :usuario ,class: 'form-control', placeholder: 'Usuario'%>
-				<%= f.password_field :password ,class: 'form-control', placeholder: 'Contrasena'%>
-				<%= f.submit "Log in", class: "btn btn-primary" %>
-			<% end %>
+				<%= form_for(:session, url: sessions_path) do |f| %>
+					<%= f.text_field :usuario ,class: 'form-control', placeholder: 'Usuario'%>
+					<%= f.password_field :password ,class: 'form-control', placeholder: 'Contrasena'%>
+					<%= f.submit "INGRESAR", class: "btn btn-primary" %>
+				<% end %>
 
-		</div>
+			</div>
 	</div>
     
 </body>

@@ -1,0 +1,46 @@
+// Place all the styles related to the Administradors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#body-login{
+	background-color: #015187;
+	color: white;
+	position: relative;
+	text-align: center;
+	
+}
+
+#wrapper-login{
+	margin: 100px auto 0 auto;
+	height: 440px;
+	width: 800px;
+	
+}
+
+#content-login{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px 20px;
+    width: 360px;
+    margin: 20px auto 0  auto;
+}
+
+#content-login{
+
+	form, input .form-control{
+		margin: 0 auto;
+		width: 300px;
+	}
+
+	input.btn.btn-primary{
+		font-size: 17px ;
+		font-weight: bold ;
+	}
+    
+}
+
+#content-login input{
+    margin: 20px 0 ;
+}
+
+
+ 

@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
   skip_before_action :authorize, only: [:create, :new]
-  layout false # Para que lo incluya en el application.html
+  layout false # Para que no lo incluya en el application.html
 
 	def login
     if(session[:user_id])

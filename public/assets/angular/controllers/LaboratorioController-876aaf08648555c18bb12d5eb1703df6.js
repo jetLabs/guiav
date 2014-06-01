@@ -1,0 +1,1 @@
+!function(){var o=angular.module("GuiaV",[]);o.controller("LaboratorioController",["$scope","filterFilter","$http",function(o,r,t){return o.laboratorios=[],t.get("./laboratorios.json").success(function(r){return o.laboratorios=r})}])}();

@@ -1,6 +1,6 @@
 class LaboratoriosController < ApplicationController
 
-  layout 'admin' # El contexto (master) es admin.html.erb
+  layout 'admin' # El layout es admin.html.erb
 
   before_action :set_laboratorio, only: [:show, :edit, :update, :destroy]
 
