@@ -52,4 +52,4 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'pg', group: :production
 
-gem "font-awesome-rails"
+gem 'font-awesome-rails'

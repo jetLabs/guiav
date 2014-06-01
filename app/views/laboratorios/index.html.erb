@@ -1,37 +1,44 @@
-<h1>Listing laboratorios</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Nombre</th>
-      <th>Razon social</th>
-      <th>Direccion</th>
-      <th>Departamento</th>
-      <th>Telefono</th>
-      <th>Web</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<h1>Listado de laboratorios</h1>
 
-  <tbody>
-    <% @laboratorios.each do |laboratorio| %>
+<div class="col-xs-6" >
+    <div class="right-inner-addon">
+        <i class="icon-search"></i>
+        <input ng-model="search.all" type="search"
+               class="form-control" 
+               placeholder="Buscar" />
+    </div>
+</div>
+
+<div ng-controller="LaboratorioController">
+  <table class="table table-striped table-bordered">
+    <thead>
       <tr>
-        <td><%= laboratorio.nombre %></td>
-        <td><%= laboratorio.razon_social %></td>
-        <td><%= laboratorio.direccion %></td>
-        <td><%= laboratorio.departamento %></td>
-        <td><%= laboratorio.telefono %></td>
-        <td><%= laboratorio.web %></td>
-        <td><%= link_to 'Show', laboratorio %></td>
-        <td><%= link_to 'Edit', edit_laboratorio_path(laboratorio) %></td>
-        <td><%= link_to 'Destroy', laboratorio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Nombre</th>
+        <th>Razon social</th>
+        <th>Direccion</th>
+        <th>Departamento</th>
+        <th>Telefono</th>
+        <th>Web</th>
+        <th></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody >
+        <tr ng-repeat="laboratorio in laboratorios | filter: search.all " ng-cloak>
+          <td>{{ laboratorio.nombre }}</td>
+          <td>{{ laboratorio.razon_social }}</td>
+          <td>{{ laboratorio.direccion }}</td>
+          <td>{{ laboratorio.departamento }}</td>
+          <td>{{ laboratorio.telefono }}</td>
+          <td>{{ laboratorio.web }}</td>
+          <td>
+            <a class="btn btn-mini" ng-href="/laboratorios/{{laboratorio.id}}/edit">Editar</a>
+            <a class="btn btn-mini btn-danger" data-confirm="Estas seguro que desea eliminar el laboratorio?" data-method="delete" href="/laboratorios/{{laboratorio.id}}/" rel="nofollow">Eliminar</a>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <br>
-
-<%= link_to 'New Laboratorio', new_laboratorio_path %>
