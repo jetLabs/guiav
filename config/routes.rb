@@ -1,4 +1,6 @@
 Guiav::Application.routes.draw do
+  resources :administradors
+
   get "static_pages/index"
   get "index/welcome"
   # The priority is based upon order of creation: first created -> highest priority.
@@ -6,6 +8,20 @@ Guiav::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'static_pages#index'
+
+  # Sesiones
+  resources :sessions, only: [:login, :create, :destroy]
+  controller :sessions do
+    get 'admin/login' => :login
+    post 'ladmin/ogin' => :create
+    delete 'admin/logout' => :destroy
+    get 'admin/logout' => :destroy
+  end
+
+  # Administrator Pages
+  controller :administrator_pages do
+    get 'admin' => :home
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
