@@ -1,4 +1,5 @@
 Guiav::Application.routes.draw do
+  resources :laboratorios
   resources :administradors
 
   get "static_pages/index"

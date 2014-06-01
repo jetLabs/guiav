@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
 
 	def login
     if(session[:user_id])
-      redirect_to '/admin/'
+      redirect_to admin_path
     end
 	end
 
@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
   	  if user && (params[:session][:password] == user.contrasena)
         session[:user_id] = user.id
         session[:usuario] = user.usuario
-        redirect_to '/admin/'
+        redirect_to admin_path
   	  else
       # Create an error message and re-render the signin form.
       	redirect_to admin_login_path, notice: "Invalid email/password combination"

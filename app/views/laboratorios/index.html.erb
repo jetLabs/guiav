@@ -1,0 +1,37 @@
+<h1>Listing laboratorios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Razon social</th>
+      <th>Direccion</th>
+      <th>Departamento</th>
+      <th>Telefono</th>
+      <th>Web</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @laboratorios.each do |laboratorio| %>
+      <tr>
+        <td><%= laboratorio.nombre %></td>
+        <td><%= laboratorio.razon_social %></td>
+        <td><%= laboratorio.direccion %></td>
+        <td><%= laboratorio.departamento %></td>
+        <td><%= laboratorio.telefono %></td>
+        <td><%= laboratorio.web %></td>
+        <td><%= link_to 'Show', laboratorio %></td>
+        <td><%= link_to 'Edit', edit_laboratorio_path(laboratorio) %></td>
+        <td><%= link_to 'Destroy', laboratorio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Laboratorio', new_laboratorio_path %>

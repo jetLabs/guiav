@@ -1,0 +1,41 @@
+<%= form_for(@laboratorio) do |f| %>
+  <% if @laboratorio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@laboratorio.errors.count, "error") %> prohibited this laboratorio from being saved:</h2>
+
+      <ul>
+      <% @laboratorio.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :razon_social %><br>
+    <%= f.text_field :razon_social %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br>
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :departamento %><br>
+    <%= f.text_field :departamento %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br>
+    <%= f.text_field :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :web %><br>
+    <%= f.text_field :web %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

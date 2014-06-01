@@ -15,9 +15,7 @@
 	<div id="wrapper">
 		<!-- Login campos -->
 		<div class="centered col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-4">	
-			<a href="index.html">
-				<%= image_tag "logochico.png" , height: '150' %>
-			</a>
+			<%= image_tag "logochico.png" , height: '150' %>
 			
 			<% flash.each do |key, value| %>
 				<div class="alert alert-<%= key %>"><%= value %></div>
@@ -31,8 +29,6 @@
 
 		</div>
 	</div>
-
-	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     
 </body>
 </html>

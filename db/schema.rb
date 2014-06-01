@@ -11,13 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140601003750) do
+ActiveRecord::Schema.define(version: 20140601011139) do
 
   create_table "administradors", force: true do |t|
     t.string   "usuario"
     t.string   "nombre"
     t.string   "contrasena"
     t.boolean  "habilitado"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "laboratorios", force: true do |t|
+    t.string   "nombre"
+    t.string   "razon_social"
+    t.string   "direccion"
+    t.string   "departamento"
+    t.string   "telefono"
+    t.string   "web"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
