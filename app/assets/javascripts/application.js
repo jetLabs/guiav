@@ -12,6 +12,7 @@
 //
 //= require angular/angular.js
 //= require angular/angular-resource.js
+//= require mainangular.js
 //= require jquery
 //= require jquery_ujs
 //= require chosen-jquery
