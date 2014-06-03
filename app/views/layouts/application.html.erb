@@ -21,20 +21,6 @@
 				<%= image_tag "logo.png" , height: '220' %>
 			</div>
 			<div id="licencia">
-				<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="L2XSE8GG6KH58">
-					<button type="submit" class="btn btn-outline-inverse btn-lg">Upgrade to GuiaV PRO</button>
-					<script src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=jandres.rodriguezg-facilitator@gmail.com" 
-					    data-button="Upgrade GuiaV PRO Now" 
-					    data-name="GuiaV PRO License" 
-					    data-quantity="1" 
-					    data-amount="50" 
-					    data-shipping="0" 
-					    data-tax="0" 
-					    data-env="sandbox"
-					></script>
-				</form>
 				<%= link_to 'Upgrade to GuiaV PRO Now', paypal_url(index_welcome_path), class: "btn btn-outline-inverse btn-lg" %> 
 			</div>
 			 <div id="navigation-bar">
