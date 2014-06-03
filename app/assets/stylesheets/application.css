@@ -21,6 +21,19 @@
 	background-color: #015187;
 }
 
+#licencia{
+	margin: 10px 0 35px 0;
+	color: #fff;
+}
+
+#licencia a:visited{
+	color: #fff;
+}
+
+#licencia a:hover{
+	color: #563d7c;
+}
+
 #footer
 {
 	background-color: #015187;

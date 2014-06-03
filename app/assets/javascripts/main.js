@@ -42,4 +42,10 @@ $(window).load(function(){
 		width: '250px'
 	});
 
+	$('#licencia button').removeClass('paypal-button');
+	$('#licencia button').removeClass('large');
+	$('#licencia button').addClass('btn'); 
+	$('#licencia button').addClass('btn-outline-inverse');
+	$('#licencia button').addClass('btn-lg');
+
 });
