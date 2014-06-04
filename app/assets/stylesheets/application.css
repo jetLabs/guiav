@@ -61,7 +61,6 @@
 #contact i{
 	color: white;
 	border:1px solid;
-	padding: 5px 9px;
 	-moz-border-radius: 50%; 
     -webkit-border-radius: 50%; 
     border-radius: 50%; 
@@ -128,6 +127,10 @@
  	text-align: center;
  	display: inline;
  	text-decoration: none;
+ }
+
+ #contact li a:hover{
+ 	background-color: white;
  }
 
  #contact-us{
