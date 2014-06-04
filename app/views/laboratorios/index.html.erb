@@ -1,44 +1,45 @@
+<div id="content-lab">
+  <h1>Listado de laboratorios</h1>
 
-<h1>Listado de laboratorios</h1>
+  <div class="col-xs-6" >
+      <div class="right-inner-addon">
+          <i class="icon-search"></i>
+          <input ng-model="search.all" type="search"
+                 class="form-control" 
+                 placeholder="Buscar" />
+      </div>
+  </div>
+  <br><br><br>
+  <div ng-controller="LaboratorioController as labCtrl">
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Razon social</th>
+          <th>Direccion</th>
+          <th>Departamento</th>
+          <th>Telefono</th>
+          <th>Web</th>
+          <th></th>
+        </tr>
+      </thead>
 
-<div class="col-xs-6" >
-    <div class="right-inner-addon">
-        <i class="icon-search"></i>
-        <input ng-model="search.all" type="search"
-               class="form-control" 
-               placeholder="Buscar" />
-    </div>
+      <tbody >
+          <tr ng-repeat="laboratorio in laboratorios" >
+            <td>{{ laboratorio.nombre }}</td>
+            <td>{{ laboratorio.razon_social }}</td>
+            <td>{{ laboratorio.direccion }}</td>
+            <td>{{ laboratorio.departamento }}</td>
+            <td>{{ laboratorio.telefono }}</td>
+            <td>{{ laboratorio.web }}</td>
+            <td>
+              <a class="btn btn-xs btn-default" ng-href="/laboratorios/{{laboratorio.id}}/edit">Editar</a>
+              <a class="btn btn-xs btn-danger" data-confirm="Estas seguro que desea eliminar el laboratorio?" data-method="delete" href="/laboratorios/{{laboratorio.id}}/" rel="nofollow">Eliminar</a>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <br>
 </div>
-
-<div ng-controller="LaboratorioController">
-  <table class="table table-striped table-bordered">
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Razon social</th>
-        <th>Direccion</th>
-        <th>Departamento</th>
-        <th>Telefono</th>
-        <th>Web</th>
-        <th></th>
-      </tr>
-    </thead>
-
-    <tbody >
-        <tr ng-repeat="laboratorio in laboratorios | filter: search.all " ng-cloak>
-          <td>{{ laboratorio.nombre }}</td>
-          <td>{{ laboratorio.razon_social }}</td>
-          <td>{{ laboratorio.direccion }}</td>
-          <td>{{ laboratorio.departamento }}</td>
-          <td>{{ laboratorio.telefono }}</td>
-          <td>{{ laboratorio.web }}</td>
-          <td>
-            <a class="btn btn-mini" ng-href="/laboratorios/{{laboratorio.id}}/edit">Editar</a>
-            <a class="btn btn-mini btn-danger" data-confirm="Estas seguro que desea eliminar el laboratorio?" data-method="delete" href="/laboratorios/{{laboratorio.id}}/" rel="nofollow">Eliminar</a>
-          </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<br>

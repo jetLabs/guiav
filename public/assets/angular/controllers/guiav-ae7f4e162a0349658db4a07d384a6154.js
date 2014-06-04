@@ -1,0 +1,1 @@
+var app=angular.module("guiaV",[]);app.controller("LaboratorioController",function(o,r){return o.laboratorios=[],r.get("./laboratorios.json").success(function(r){return o.laboratorios=r})});

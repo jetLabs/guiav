@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html ng-app="GuiaV">
+<html ng-app="guiaV">
 <head>
   <title>GuiaV</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -18,14 +17,6 @@
 				<nav class="navbar navbar-custom" role="navigation">
 					<div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -33,8 +24,7 @@
 								<li><%= image_tag "logochico.png" , height: '50' %></li>
 							</ul>
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="#">Home</a></li>
-								<li><a href="#">About Us</a></li>
+								<li class="active"><a href="#">Admin</a></li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Laboratorios <b class="caret"></b></a>
 									<ul class="dropdown-menu">
@@ -52,8 +42,13 @@
 				</nav>
 			</div>
 		</div>
-
-		<%= yield %>
+		<div id="wrapper-lab">
+			<%= yield %>
+		</div>
+		
+	</div>
+	<div id="footer">
+		
 	</div>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>

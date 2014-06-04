@@ -1,6 +1,1 @@
-(function() {
-
-	// Angular
-	angular.module('GuiaV', []);  
-
-})();
+angular.module('GuiaV', []);  

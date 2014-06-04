@@ -1,4 +1,4 @@
-( function( $ ) {
+/*( function( $ ) {
     // Init Skrollr
     var s = skrollr.init({
         render: function(data) {
@@ -9,4 +9,4 @@
 
         }
     });
-} )( jQuery );
+} )( jQuery );*/

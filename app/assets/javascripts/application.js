@@ -10,13 +10,14 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require angular/angular.js
-//= require angular/angular-resource.js
-//= require mainangular.js
+
 //= require jquery
 //= require jquery_ujs
+//= require angular/angular.js
+//= require angular/controllers/guiav.js
 //= require chosen-jquery
 //= require turbolinks
 //= require bootstrap.min.js
 //= require skrollr
 //= require_tree .
+

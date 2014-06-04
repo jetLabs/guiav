@@ -1,4 +1,4 @@
-<%= form_for(@laboratorio) do |f| %>
+<%= form_for(@laboratorio , class:"form-horizontal", role:"form") do |f| %>
   <% if @laboratorio.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@laboratorio.errors.count, "error") %> prohibited this laboratorio from being saved:</h2>
@@ -10,54 +10,53 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :nombre %><br>
-    <%= f.text_field :nombre %>
-  </div>
-  <div class="field">
-    <%= f.label :razon_social %><br>
-    <%= f.text_field :razon_social %>
-  </div>
-  <div class="field">
-    <%= f.label :direccion %><br>
-    <%= f.text_field :direccion %>
-  </div>
-  <div class="field">
-    <%= f.label :departamento %><br>
-    <%= f.select :departamento, 
-      ['Artigas',
-        'Canelones',
-        'Cerro',
-        'Colonia',
-        'Durazno',
-        'Flores',
-        'Florida',
-        'Lavalleja',
-        'Maldonado',
-        'Montevideo',
-        'Paysandú',
-        'Rivera',
-        'Rocha',
-        'Río Negro',
-        'Salto',
-        'San José',
-        'Soriano',
-        'Tacuarembó',
-        'Treinta y Tres'],
-      { include_blank: true }, 
-      {class: 'chz-select-departamento' }
-    %>
-  </div>
-  <div class="field">
-    <%= f.label :telefono %><br>
-    <%= f.text_field :telefono %>
-  </div>
-  <div class="field">
-    <%= f.label :web %><br>
-    <%= f.text_field :web %>
-  </div>
-  <div class="actions">
-    <%= f.submit nil, class: "btn btn-primary"  %>
-  </div>
+  <div class="form-group">
+    <%= f.label :nombre , class:"col-sm-2 control-label"%>
+      <%= f.text_field :nombre, class:"form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :razon_social, class:"col-sm-2 control-label"   %>
+      <%= f.text_field :razon_social, class:"form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :direccion , class:"col-sm-2 control-label"%> 
+      <%= f.text_field :direccion, class:"form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :departamento, class:"col-sm-2 control-label"   %>
+      <%= f.select :departamento, 
+        ['Artigas',
+          'Canelones',
+          'Cerro',
+          'Colonia',
+          'Durazno',
+          'Flores',
+          'Florida',
+          'Lavalleja',
+          'Maldonado',
+          'Montevideo',
+          'Paysandú',
+          'Rivera',
+          'Rocha',
+          'Río Negro',
+          'Salto',
+          'San José',
+          'Soriano',
+          'Tacuarembó',
+          'Treinta y Tres'],
+        { include_blank: true }, 
+        {class: 'chz-select-departamento' }
+      %>
+    </div>
+    <div class="form-group">
+      <%= f.label :telefono, class:"col-sm-2 control-label" %>
+      <%= f.text_field :telefono, class:"form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :web, class:"col-sm-2 control-label" %>
+      <%= f.text_field :web , class:"form-control"%>
+      </div>
+    <div class="actions">
+      <%= f.submit nil, class: "btn btn-primary"  %>
+    </div>
 <% end %>
