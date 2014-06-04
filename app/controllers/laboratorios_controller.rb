@@ -1,4 +1,4 @@
-class LaboratoriosController < ApplicationController
+class LaboratoriosController < AdminController
 
   layout 'admin' # El layout es admin.html.erb
 

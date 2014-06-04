@@ -1,4 +1,4 @@
-
+(function() {
 	var app = angular.module('guiaV', []);
 	app.controller('LaboratorioController', function($scope, $http) {
 	  $scope.laboratorios = [];
@@ -6,4 +6,5 @@
 	    return $scope.laboratorios = data;
 	  });
 	});
+})();
 

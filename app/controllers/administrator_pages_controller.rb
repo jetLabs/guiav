@@ -1,4 +1,4 @@
-class AdministratorPagesController < ApplicationController
+class AdministratorPagesController < AdminController
 
 	layout 'admin' # El contexto (master) es admin.html.erb, con seguridad
 
