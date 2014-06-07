@@ -27,6 +27,10 @@ $(window).load(function(){
 		});
 	});
 
+   $(document).ready(function(){
+          $("ul.youtube-videogallery").youtubeVideoGallery( );
+      });
+
 	
 
 });
