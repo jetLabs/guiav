@@ -20,6 +20,34 @@
 	
 }
 
+
+/* --------------- MODAL --------------- */
+body.modal-open,
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+    margin-right: 17px;
+}
+
+.modal-dialog {
+  margin-top: 10% !important;
+  height: 300px !important;
+  text-align: center;
+
+}
+
+.modal-body {
+  padding-bottom: 0 !important;
+
+}
+
+.modal-content {
+  height: 300px !important;
+  text-align: center;
+
+}
+
+/*----------------- END MODAL ----------------*/
+
 h1,h2,h3{
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
 }

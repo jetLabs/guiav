@@ -25,12 +25,26 @@
 								<li><%= image_tag "logochico.png" , height: '50' %></li>
 							</ul>
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="#">Admin</a></li>
+								<li class="active"><a href="/admin/home">Admin</a></li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Laboratorios <b class="caret"></b></a>
 									<ul class="dropdown-menu">
-										<li><%= link_to "Nuevo laboratorio", new_laboratorio_path %></li>
-										<li><%= link_to "Ver laboratorios", laboratorios_path %></li>
+										<li><%= link_to "Nuevo Laboratorio", new_laboratorio_path %></li>
+										<li><%= link_to "Ver Laboratorios", laboratorios_path %></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Categorias <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><%= link_to "Ingresar Categoria", new_laboratorio_path %></li>
+										<li><%= link_to "Ver Categorias", laboratorios_path %></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Medicamentos <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><%= link_to "Ingresar Medicamento", new_laboratorio_path %></li>
+										<li><%= link_to "Ver Medicamentos", laboratorios_path %></li>
 									</ul>
 								</li>
 							</ul>
