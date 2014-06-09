@@ -16,7 +16,8 @@ class ApplicationController < ActionController::Base
       :cmd => '_cart',
       :upload => 1,
       :return => "http://guiav.herokuapp.com/",
-      :no_shipping => 1
+      :no_shipping => 1,
+      :notify_url => "http://guiav.herokuapp.com/payment_notifications"
     }
     # These values set up the details for the item on paypal.
        values.merge!({

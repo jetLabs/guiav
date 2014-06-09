@@ -2,6 +2,10 @@ Guiav::Application.routes.draw do
   resources :laboratorios, path: "admin/laboratorios"
   resources :administradors
 
+
+  post "/payment_notifications" => 'payment_notification#create'
+
+
   get "static_pages/index"
   get "index/welcome"
   get "/about" => 'static_pages#about'
