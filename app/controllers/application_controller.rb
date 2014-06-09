@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
 
   helper_method :paypal_url
   #before_action :authorize
+  
   def paypal_url
 
     values = {
