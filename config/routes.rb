@@ -1,4 +1,6 @@
 Guiav::Application.routes.draw do
+  resources :users
+
   resources :laboratorios, path: "admin/laboratorios"
   resources :administradors
 
