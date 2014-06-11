@@ -33,15 +33,6 @@ ActiveRecord::Schema.define(version: 20140610001205) do
     t.datetime "updated_at"
   end
 
-  create_table "payment_notifications", force: true do |t|
-    t.text     "params"
-    t.string   "status"
-    t.string   "transaction_id"
-    t.integer  "cart_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "users", force: true do |t|
     t.string   "username"
     t.string   "password"

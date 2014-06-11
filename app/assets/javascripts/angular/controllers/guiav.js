@@ -1,5 +1,7 @@
 (function() {
+
 	var app = angular.module('guiaV', []);
+	
 	app.controller('LaboratorioController', function($scope, $http) {
 	  $scope.laboratorios = [];
 	  return $http.get('./laboratorios.json').success(function(data) {
@@ -19,12 +21,9 @@
             }).error(function (data, status, headers, config) {
                 return false;
             });
-
-}
-
-
 		};
 	});
+
 })();
 
 
