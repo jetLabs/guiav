@@ -7,7 +7,7 @@ Guiav::Application.routes.draw do
 
   post "/payment_notifications" => 'payment_notification#create'
 
-  post "valid_login" => "static_pages#login"
+  post "/valid_login" => "static_pages#login"
   get "static_pages/index"
   get "index/welcome"
   get "/about" => 'static_pages#about'
