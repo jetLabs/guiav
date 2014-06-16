@@ -14,6 +14,8 @@
 		$scope.username = '';
 		$scope.password = '';
 		$scope.remember = '';
+		$scope.valido = false;
+		$scope.invalido = false;
 
 		$scope.userValido = function(){
 
@@ -34,9 +36,13 @@
 
         if (data.correct == 1){
         	console.log('OK USUARIO')
+        	$scope.valido = true;
+        	$scope.invalido = false;
        	}
        	else {
        		console.log('ERROR USUARIO')
+       		$scope.invalido = true;
+       		$scope.valido = false;
        	};
 
         return true;

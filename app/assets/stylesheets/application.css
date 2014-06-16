@@ -30,7 +30,7 @@ body.modal-open,
 
 .modal-dialog {
   margin-top: 10% !important;
-  height: 300px !important;
+  height: 300 !important;
   width: 400px !important;
   text-align: center;
 
@@ -42,7 +42,7 @@ body.modal-open,
 }
 
 .modal-content {
-  height: 300px !important;
+  height: auto !important;
   text-align: center;
 
 }
