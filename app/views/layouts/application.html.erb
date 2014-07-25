@@ -17,10 +17,6 @@
 
   <!-- fonts -->
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
-
-  
-
-	
 </head>
 <body>
 	<div id="wrapper">
@@ -29,62 +25,17 @@
 				<%= image_tag "logo.png" , height: '220' %>
 			</div>
 			<div id="licencia">
+				<form class="form-inline search" role="form">
+			  <div class="form-group" >
+			    <input type="text" class="form-control" style="width:600px;" id="exampleInputEmail2" placeholder="What are you looking for?">
+			  </div>
+			  <div class="form-group">
+			    <button type="submit" class="btn btn-primary" style=" font-weight: bold; margin-left: -2px;">Search</button>
+			  </div>
+			 </form>
 				<%= link_to 'Upgrade to GuiaV PRO Now', paypal_url, class: "btn btn-outline-inverse btn-lg" %> 
 			</div>
-			 <div id="navigation-bar">
-			 	<nav class="navbar navbar-custom" role="navigation">
-				  <div class="container-fluid">
-				    <!-- Brand and toggle get grouped for better mobile display -->
-				    <div class="navbar-header">
-				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				      </button>
-				    </div>
-
-				    <!-- Collect the nav links, forms, and other content for toggling -->
-				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <ul class="nav navbar-nav">
-				        <li class="active"><a href="#">Home</a></li>
-				        <li><a href="/about">Sobre Guia V</a></li>
-				        <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-				          <ul class="dropdown-menu">
-				            <li><a href="#">Action</a></li>
-				            <li><a href="#">Another action</a></li>
-				            <li><a href="#">Something else here</a></li>
-				            <li class="divider"></li>
-				            <li><a href="#">Separated link</a></li>
-				            <li class="divider"></li>
-				            <li><a href="#">One more separated link</a></li>
-				          </ul>
-				        </li>
-				      </ul>
-				      <form class="navbar-form navbar-left" role="search">
-				        <div class="form-group">
-				          <input type="text" class="form-control" placeholder="Search">
-				        </div>
-				        <button type="submit" class="btn btn-default">Submit</button>
-				      </form>
-				      <ul class="nav navbar-nav navbar-right">
-				        <li><a href="#" data-toggle="modal" data-target="#signInModal">Sign In</a></li>
-				        <li class="dropdown">
-				          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Username <b class="caret"></b></a>
-				          <ul class="dropdown-menu">
-				            <li><a href="#">Action</a></li>
-				            <li><a href="#">Another action</a></li>
-				            <li><a href="#">Something else here</a></li>
-				            <li class="divider"></li>
-				            <li><a href="#">Sign out</a></li>
-				          </ul>
-				        </li>
-				      </ul>
-				    </div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
-				</nav>
-			 </div>
+			 
 		</div>
 
 		<!-- Modal -->
@@ -100,7 +51,7 @@
 		        <div ng-show="invalido" class="alert alert-danger">Usuario o contrasenia incorrecta</div>
 		        <div ng-show="valido" class="alert alert-success">Bienvenido</div>
 				  <div class="form-group">
-				    <div class="col-sm-offset-1 col-sm-10" >
+				    <div cl	ass="col-sm-offset-1 col-sm-10" >
 				      <input type="text" ng-model="username" class="form-control" id="inputEmail3" placeholder="Usuario">
 				    </div>
 				  </div>
@@ -144,8 +95,13 @@
 					</div>
 					<div id="contact">
 							<ul>
-								<li class="fbook"><i class="fa fa-facebook fa-1x"><a href="https://www.facebook.com/guiavet" target="_blank"></a></i></li>
-								<li class="mail"><i class="fa fa-envelope-o fa-1x"><a href="mailto:info@guiav.com.uy"></a></i></li>
+								<li class="fbook">
+									<a href="https://www.facebook.com/guiavet" target="_blank"><i class="fa fa-facebook fa-1x">
+										
+									</i></a>
+								</li>
+								<li class="mail"><a href="mailto:info@guiav.com.uy"><i class="fa fa-envelope-o fa-1x"></i></a></li>
+								<li class="mail"><a href="https://twitter.com/GuiavUruguay"><i class="fa fa-twitter fa-1x"></i></a></li>
 							</ul>
 							<br>
 							<p>info@guiav.com.uy<br>(+598) 2203 9897<br>

@@ -78,3 +78,54 @@
 #videos{
   margin: 80px auto 20px auto;
 }
+
+// WRAPPER HOME
+
+#wrapper-home{
+  background: transparent; 
+}
+
+// MENU --------------
+
+.menu{
+  width: 80%;
+  margin: 30px auto;
+}
+
+.menu .row{
+  text-align:center;
+}
+
+.menu .row div{
+  background: no-repeat center center; 
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  line-height: 200px;
+  text-align:center;
+}
+
+.menu .row .cattle{
+  background-image: url(/assets/cattle.jpg);
+}
+
+.menu .row .horse{
+  background-image: url(/assets/horse.jpg);
+}
+
+.menu .row .sheep{
+  background-image: url(/assets/sheep.jpg);
+}
+
+.menu .row h2{
+  line-height: 200px;
+  margin-top:0;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-wieght: 900;
+  color: rgba(255,255,255,1);
+  vertical-align: middle;
+}
+

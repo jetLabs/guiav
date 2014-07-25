@@ -9,6 +9,7 @@ Guiav::Application.routes.draw do
 
   post "/valid_login" => "static_pages#login"
   get "static_pages/index"
+  get "static_pages/index2"
   get "index/welcome"
   get "/about" => 'static_pages#about'
 

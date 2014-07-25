@@ -56,8 +56,15 @@ h1,h2,h3{
 
 #header{
 	text-align: center;
+	background: url(/assets/bg1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	background-color: #015187;
 }
+
+
 
 #licencia{
 	margin: 10px 0 35px 0;
@@ -168,7 +175,7 @@ h1,h2,h3{
  }
 
  #contact li a:hover{
- 	background-color: white;
+ 	background-color: transparent;
  }
 
  #contact-us{
