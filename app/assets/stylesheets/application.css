@@ -20,6 +20,10 @@
 	
 }
 
+html,body{
+	background-color: #00FFFF;
+}
+
 
 /* --------------- MODAL --------------- */
 body.modal-open,
@@ -56,23 +60,49 @@ h1,h2,h3{
 
 #header{
 	text-align: center;
-	background: url(/assets/bg1.jpg) no-repeat center 160% fixed; 
+	background: url(/assets/bg1.jpg) no-repeat center 190% fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 	background-color: #015187;
+	height: 420px;
 }
 
 #header form{
 	background: rgba(57, 60, 61, 0.8);
-	width: 685px;
+	width: 688px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 	border: 1px solid rgba(0, 0, 0, 0.8);
 	padding: 4px;
 	line-height: 1.2;
 	border-radius: 3px;
-	margin: 0 auto;
+	margin: 0 auto ;
+
+}
+
+#header .header-nav{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-right: 50px;
+	margin-top: 25px;
+}
+
+#header .header-nav li{
+	display: inline;
+	margin-right: 20px;
+}
+
+#header .header-nav a{
+	color: #fff;
+	text-decoration: none;
+}
+
+#header .header-nav a:hover{
+	color: #fff;
+	text-decoration: none;
+	background-color: transparent;
 }
 
 

@@ -90,6 +90,17 @@
 .menu{
   width: 80%;
   margin: 30px auto;
+  padding-bottom: 50px;
+}
+
+.menu .titles {
+  text-align:center;  
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.menu .titles h2 {
+  font-weight: 600;
 }
 
 .menu .row{
@@ -181,6 +192,6 @@
 }
 
 .menu .categories:hover .transparent{
-  opacity: .7;
+  opacity: .4;
 }
 

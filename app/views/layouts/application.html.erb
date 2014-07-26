@@ -21,6 +21,13 @@
 <body>
 	<div id="wrapper">
 		<div id="header">
+			<div class="header-nav">
+				<ul>
+					<li><a href="">Sign up</a></li>
+					<li><a href="" data-toggle="modal" data-target="#signInModal">Log in</a></li>
+					<li><a href="">Help &nbsp;<i class="fa fa-angle-down"></i></a></li>
+				</ul>
+			</div>
 			<div id="logo-header">
 				<%= image_tag "logo.png" , height: '220' %>
 			</div>
@@ -33,7 +40,7 @@
 				    <button type="submit" class="btn btn-primary" style=" font-weight: bold;">Search</button>
 				  </div>
 				 </form>
-				<%= link_to 'Upgrade to GuiaV PRO Now', paypal_url, class: "btn btn-outline-inverse btn-lg" %> 
+				<%= link_to 'Upgrade to GuiaV PRO Now', paypal_url, class: "btn btn-outline-inverse btn-lg", style: 'display: none' %> 
 			</div>
 			 
 		</div>
