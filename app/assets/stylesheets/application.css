@@ -24,6 +24,10 @@ html,body{
 	background-color: #00FFFF;
 }
 
+.modal-open{
+	margin-right: 0px !important;
+}
+
 
 /* --------------- MODAL --------------- */
 body.modal-open,
@@ -127,6 +131,14 @@ h1,h2,h3{
 	text-align: center;
 }
 
+#footer h2{
+	margin: 0 auto;
+	width: 50%;
+	font-size: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
 #logo-header{
 	padding:  30px 0;
 }
@@ -198,7 +210,7 @@ h1,h2,h3{
 
 #map-canvas {
         width: 100%;
-        height: 400px;
+        height: 500px;
       }
 
  #contact{
@@ -224,15 +236,11 @@ h1,h2,h3{
  	font-size: 60px;
  }
 
- #footer-content{
-	padding-bottom: 20px;
- }
-
  #arrow-up i{
  	position: fixed;
  	right: 50px;
  	bottom: 60px;
- 	color: #A9A9A9 ;
+ 	color: #fff ;
  	opacity: 0.7;
  }
 

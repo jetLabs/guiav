@@ -58,7 +58,7 @@
 		        <div ng-show="invalido" class="alert alert-danger">Usuario o contrasenia incorrecta</div>
 		        <div ng-show="valido" class="alert alert-success">Bienvenido</div>
 				  <div class="form-group">
-				    <div cl	ass="col-sm-offset-1 col-sm-10" >
+				    <div class="col-sm-offset-1 col-sm-10" >
 				      <input type="text" ng-model="username" class="form-control" id="inputEmail3" placeholder="Usuario">
 				    </div>
 				  </div>
@@ -91,14 +91,14 @@
 		<%= yield %>
 
 		<div id="footer" class="centered">
-			
-			<div id="footer-content">
-				
-				<h1 id="contact-us">CONTACT US</h1>
-				<div id="map-canvas"></div>
-				<div id="footer-bottom">
+			<div class="row">
+				<div class="col-md-6">
+					<div id="map-canvas"></div>
+				</div>
+				<div class="col-md-6">
 					<div id="logo-footer">
 						<%= image_tag "logo_sin_texto.png" , height: '80' %>
+						<h2>Siguenos en</h2>
 					</div>
 					<div id="contact">
 							<ul>
@@ -115,8 +115,6 @@
 							
 							Av. Agraciada 2541 Of. 101<br>
 							Montevideo, Uruguay</p>
-
-							
 					</div>
 					<div id="auspicios">
 						<h4>Auspician:</h4>
@@ -126,13 +124,17 @@
 						</ul>
 					</div>
 				</div>
+				
+			</div>
+			<div id="footer-content">		
 				<div id="arrow-up">
 					<a href="#"><i class="fa fa-arrow-circle-up fa-4x"></i></a>
 				</div>
 			</div>
+			
 		</div>
 		<div id="copyright">
-			<p class="copy">© 2014 GuiaV Uruguay. All rights reserved.</p>
+			<p class="copy">© 2014 GuiaV Uruguay. All rights reserved. Developed by <%= image_tag "jetlabs_logo.png" , height: '18', style: "margin-top:-4px;"  %></p>
 		</div>
 
 	
