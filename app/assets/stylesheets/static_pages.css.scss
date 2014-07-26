@@ -96,7 +96,7 @@
   text-align:center;
 }
 
-.menu .row div{
+.menu .row .categories{
   background: no-repeat center center; 
   height: 200px;
   -webkit-background-size: cover;
@@ -105,6 +105,15 @@
   background-size: cover;
   line-height: 200px;
   text-align:center;
+  margin-top: 10px;
+}
+
+.menu .row .left{
+  left: -5px;
+}
+
+.menu .row .right{
+  left: 5px;
 }
 
 .menu .row .cattle{
@@ -119,13 +128,59 @@
   background-image: url(/assets/sheep.jpg);
 }
 
+.menu .row .pigs{
+  background-image: url(/assets/pigs.jpg);
+}
+
+.menu .row .cat{
+  background-image: url(/assets/cat1.jpg);
+}
+
+.menu .row .dog{
+  background-image: url(/assets/dog.jpg);
+}
+
+.menu .row .rabbit{
+  background-image: url(/assets/rabbit.jpg);
+}
+
+.menu .row .chicken{
+  background-image: url(/assets/chicken.jpg);
+}
+
+.menu .row .bee{
+  background-image: url(/assets/bee.jpg);
+}
+
 .menu .row h2{
+  position:relative;
+  text-shadow: 2px 2px #000;
   line-height: 200px;
   margin-top:0;
   text-transform: uppercase;
   font-size: 40px;
-  font-wieght: 900;
+  font-weight: 900;
   color: rgba(255,255,255,1);
   vertical-align: middle;
+  z-index: 100 !important;
+}
+
+.menu .transparent{
+  width:100%;
+  height:100%;
+  opacity: 0;
+  background-color : #000;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+  z-index: 2;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.menu .categories:hover .transparent{
+  opacity: .7;
 }
 
