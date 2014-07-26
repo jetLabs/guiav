@@ -23,8 +23,13 @@
 		<div id="header">
 			<div class="header-nav">
 				<ul>
-					<li><a href="">Sign up</a></li>
-					<li><a href="" data-toggle="modal" data-target="#signInModal">Log in</a></li>
+					<% if @user %>
+						<li><a href=""><%= @user %></a></li>
+						<li><a href="">Log out</a></li>
+					<% else %>
+						<li><a href="">Sign up</a></li>
+						<li><a href="" data-toggle="modal" data-target="#signInModal">Log in</a></li>
+					<% end %>
 					<li><a href="">Help &nbsp;<i class="fa fa-angle-down"></i></a></li>
 				</ul>
 			</div>
@@ -108,7 +113,7 @@
 									</i></a>
 								</li>
 								<li class="mail"><a href="mailto:info@guiav.com.uy"><i class="fa fa-envelope-o fa-1x"></i></a></li>
-								<li class="mail"><a href="https://twitter.com/GuiavUruguay"><i class="fa fa-twitter fa-1x"></i></a></li>
+								<li class="mail"><a href="https://twitter.com/GuiavUruguay" target="_blank"><i class="fa fa-twitter fa-1x"></i></a></li>
 							</ul>
 							<br>
 							<p>info@guiav.com.uy<br>(+598) 2203 9897<br>

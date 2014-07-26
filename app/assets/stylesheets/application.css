@@ -125,8 +125,8 @@ h1,h2,h3{
 
 #footer
 {
-	background-color: #015187;
-	color: white;
+	background-color: #f8f8f8;
+	color: #015187;
 	position: relative;
 	text-align: center;
 }
@@ -145,7 +145,7 @@ h1,h2,h3{
 
 #footer a
 {
-	color: white;
+	color: #015187;
 	text-decoration: none;
 }
 
@@ -156,7 +156,7 @@ h1,h2,h3{
 }
 
 #contact i{
-	color: white;
+	color: #015187;;
 	border:1px solid;
 	-moz-border-radius: 50%; 
     -webkit-border-radius: 50%; 
@@ -173,8 +173,8 @@ h1,h2,h3{
 }
 
 #contact .fbook i:hover, #contact .mail i:hover{
-	color:  #015187;
-	background-color: white;
+	color:  #fff;
+	background-color: #015187;
 	border-color: white !important;
 }
 
@@ -240,7 +240,7 @@ h1,h2,h3{
  	position: fixed;
  	right: 50px;
  	bottom: 60px;
- 	color: #fff ;
+ 	color: #015187 ;
  	opacity: 0.7;
  }
 

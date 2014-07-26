@@ -30,6 +30,8 @@ class ApplicationController < ActionController::Base
     "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
 
   end
+
+  
   #protected
 
   #def authorize

@@ -22,5 +22,6 @@ class StaticPagesController < ApplicationController
   end
 
   def index2
+    @user = "hola"
   end
 end
