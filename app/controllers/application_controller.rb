@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :null_session, if: Proc.new { |c| c.request.format == 'application/json' }
 
   helper_method :paypal_url
+  helper_method :current_user
   #before_action :authorize
   
   def paypal_url
@@ -30,6 +31,14 @@ class ApplicationController < ActionController::Base
     "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
 
   end
+
+
+
+  private
+
+    def current_user
+      @current_user ||= User.find(session[:user_id]) if session[:user_id]
+    end
 
   
   #protected

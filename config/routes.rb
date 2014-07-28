@@ -17,15 +17,16 @@ Guiav::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#index'
+  root 'static_pages#index2'
 
   # Sesiones
-  resources :sessions, only: [:login, :create, :destroy]
+  resources :sessions, only: [:admin_login, :admin_create, :admin_destroy]
   controller :sessions do
-    get 'admin/login' => :login
-    post 'ladmin/ogin' => :create
-    delete 'admin/logout' => :destroy
-    get 'admin/logout' => :destroy
+    get 'admin/login' => :admin_login
+    post 'admin/login' => :admin_create
+    delete 'admin/logout' => :admin_destroy
+    get 'admin/logout' => :admin_destroy
+    post 'login' => :user_create
   end
 
   # Administrator Pages

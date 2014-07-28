@@ -7,7 +7,7 @@ class AdminController < ActionController::Base
 	protected
 
 	  def authorize
-		unless Administrador.find_by(id: session[:user_id])
+		unless Administrador.find_by(id: session[:admin_id])
 			redirect_to admin_login_path, notice: "Please sign in"
 		end
 	  end

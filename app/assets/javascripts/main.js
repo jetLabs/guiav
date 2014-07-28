@@ -4,14 +4,14 @@ $(window).load(function(){
 	$('.dropdown-toggle').dropdown();
 
 	// hide #back-top first
-	if ($(this).scrollTop() < ($("body").height() - ($("#footer").outerHeight(true)*2))) {
+	if ($(this).scrollTop() < 400) {
 		$("#arrow-up").hide();
 	}
 	
 	// fade in #back-top
 	$(function () {
 		$(window).scroll(function () {
-			if ($(this).scrollTop() >  ($("body").height() - ($("#footer").outerHeight(true)*2))) {
+			if ($(this).scrollTop() >  500) {
 				$('#arrow-up').fadeIn();
 			} else {
 				$('#arrow-up').fadeOut();

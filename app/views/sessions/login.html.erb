@@ -21,7 +21,7 @@
 				<div class="alert alert-danger"><%= value %></div>
 				<% end %>
 
-				<%= form_for(:session, url: sessions_path) do |f| %>
+				<%= form_for(:session, url: admin_login_path) do |f| %>
 					<%= f.text_field :usuario ,class: 'form-control', placeholder: 'Usuario'%>
 					<%= f.password_field :password ,class: 'form-control', placeholder: 'Contrasena'%>
 					<%= f.submit "INGRESAR", class: "btn btn-primary" %>

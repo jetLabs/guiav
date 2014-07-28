@@ -23,28 +23,16 @@
 			console.log('Usuario => ' + $scope.username)
 			console.log('Contraseña => ' + $scope.password)
 			console.log('Recordar => ' + $scope.remember)
-			var params = $.param({user: $scope.username, pass: $scope.password});
+			var params = $.param({username: $scope.username, pass: $scope.password});
 			
       $http({
-        url: './valid_login',
+        url: './login',
         method: "POST",
         data: params,
         headers: {'Content-Type': 'application/x-www-form-urlencoded'}
       }).success(function (data, status, headers, config) {
         console.log('data ' + data)
-        console.log('data.correct ' + data.correct)
-
-        if (data.correct == 1){
-        	console.log('OK USUARIO')
-        	$scope.valido = true;
-        	$scope.invalido = false;
-       	}
-       	else {
-       		console.log('ERROR USUARIO')
-       		$scope.invalido = true;
-       		$scope.valido = false;
-       	};
-
+        window.location = "/";
         return true;
       }).error(function (data, status, headers, config) {
         return false;

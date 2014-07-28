@@ -20,11 +20,11 @@
 </head>
 <body>
 	<div id="wrapper">
-		<div id="header">
+		<div id="header" class="home">
 			<div class="header-nav">
 				<ul>
-					<% if @user %>
-						<li><a href=""><%= @user %></a></li>
+					<% if current_user %>
+						<li><a href=""><%= current_user.username %></a></li>
 						<li><a href="">Log out</a></li>
 					<% else %>
 						<li><a href="">Sign up</a></li>

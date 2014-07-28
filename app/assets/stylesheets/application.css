@@ -62,7 +62,7 @@ h1,h2,h3{
 }
 
 
-#header{
+#header.home{
 	text-align: center;
 	background: url(/assets/bg1.jpg) no-repeat center 190% fixed; 
   -webkit-background-size: cover;
@@ -73,7 +73,7 @@ h1,h2,h3{
 	height: 420px;
 }
 
-#header form{
+#header.home form{
 	background: rgba(57, 60, 61, 0.8);
 	width: 688px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
