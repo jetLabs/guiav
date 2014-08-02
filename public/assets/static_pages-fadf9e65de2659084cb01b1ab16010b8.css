@@ -1,0 +1,224 @@
+/* line 5, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+#table {
+  margin: 40px 40px;
+}
+
+/* line 9, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+#pagination {
+  text-align: center;
+}
+
+/* line 13, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.navbar-custom {
+  background-color: #015187;
+  color: #a8a8a8;
+  border-style: solid;
+  border-top: 1px double #a8a8a8;
+}
+
+/* line 20, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.navbar-custom .navbar-nav > li > a {
+  color: #a8a8a8;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 26, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.navbar-custom .navbar-nav > li > a:hover {
+  color: #fff;
+}
+
+/* line 30, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+/* line 35, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #126297;
+}
+
+/* line 40, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.navbar-custom .navbar-brand {
+  color: #eeeeee;
+}
+
+/* line 43, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.navbar-custom .navbar-toggle {
+  background-color: #eeeeee;
+}
+
+/* line 46, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.navbar-custom .icon-bar {
+  background-color: #126297;
+}
+
+/* line 52, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+#about {
+  height: 900px;
+  text-align: center;
+}
+
+/* line 57, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+#about h1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 60px;
+}
+
+/* line 63, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+#about-wrap {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* line 68, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+#julio {
+  margin-right: 30px;
+}
+
+/* line 72, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+#description {
+  margin: 0 auto;
+  width: 500px;
+  text-align: left;
+}
+
+/* line 78, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+#videos {
+  margin: 80px auto 20px auto;
+}
+
+/* line 84, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+#wrapper-home {
+  background: transparent;
+}
+
+/* line 90, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu {
+  width: 80%;
+  margin: 30px auto;
+  padding-bottom: 50px;
+}
+
+/* line 96, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .titles {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* line 102, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .titles h2 {
+  font-weight: 600;
+}
+
+/* line 106, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row {
+  text-align: center;
+}
+
+/* line 110, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row .categories {
+  background: no-repeat center center;
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  line-height: 200px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* line 122, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row .left {
+  left: -5px;
+}
+
+/* line 126, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row .right {
+  left: 5px;
+}
+
+/* line 130, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row .cattle {
+  background-image: url(/assets/cattle.jpg);
+}
+
+/* line 134, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row .horse {
+  background-image: url(/assets/horse.jpg);
+}
+
+/* line 138, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row .sheep {
+  background-image: url(/assets/sheep.jpg);
+}
+
+/* line 142, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row .pigs {
+  background-image: url(/assets/pigs.jpg);
+}
+
+/* line 146, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row .cat {
+  background-image: url(/assets/cat1.jpg);
+}
+
+/* line 150, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row .dog {
+  background-image: url(/assets/dog.jpg);
+}
+
+/* line 154, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row .rabbit {
+  background-image: url(/assets/rabbit.jpg);
+}
+
+/* line 158, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row .chicken {
+  background-image: url(/assets/chicken.jpg);
+}
+
+/* line 162, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row .bee {
+  background-image: url(/assets/bee.jpg);
+}
+
+/* line 166, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .row h2 {
+  position: relative;
+  text-shadow: 2px 2px #000;
+  line-height: 200px;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  vertical-align: middle;
+  z-index: 100 !important;
+}
+
+/* line 179, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .transparent {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 194, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/static_pages.css.scss */
+.menu .categories:hover .transparent {
+  opacity: .4;
+}
