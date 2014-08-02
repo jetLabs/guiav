@@ -27,6 +27,7 @@ Guiav::Application.routes.draw do
     delete 'admin/logout' => :admin_destroy
     get 'admin/logout' => :admin_destroy
     post 'login' => :user_create
+    get 'logout' => :user_destroy
   end
 
   # Administrator Pages

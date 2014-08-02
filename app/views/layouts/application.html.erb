@@ -25,7 +25,7 @@
 				<ul>
 					<% if current_user %>
 						<li><a href=""><%= current_user.username %></a></li>
-						<li><a href="">Log out</a></li>
+						<li><a href="/logout">Log out</a></li>
 					<% else %>
 						<li><a href="">Sign up</a></li>
 						<li><a href="" data-toggle="modal" data-target="#signInModal">Log in</a></li>
@@ -96,30 +96,32 @@
 		<%= yield %>
 
 		<div id="footer" class="centered">
-			<div class="row">
-				<div class="col-md-6">
-					<div id="map-canvas"></div>
-				</div>
-				<div class="col-md-6">
+
+			<div id="footer-content">
+
+				<h1 id="contact-us">CONTACTENOS</h1>
+				<div id="map-canvas"></div>
+				<div id="footer-bottom">
 					<div id="logo-footer">
 						<%= image_tag "logo_sin_texto.png" , height: '80' %>
-						<h2>Siguenos en</h2>
 					</div>
 					<div id="contact">
 							<ul>
 								<li class="fbook">
 									<a href="https://www.facebook.com/guiavet" target="_blank"><i class="fa fa-facebook fa-1x">
-										
+
 									</i></a>
 								</li>
 								<li class="mail"><a href="mailto:info@guiav.com.uy"><i class="fa fa-envelope-o fa-1x"></i></a></li>
-								<li class="mail"><a href="https://twitter.com/GuiavUruguay" target="_blank"><i class="fa fa-twitter fa-1x"></i></a></li>
+								<li class="mail"><a href="https://twitter.com/GuiavUruguay"><i class="fa fa-twitter fa-1x"></i></a></li>
 							</ul>
 							<br>
 							<p>info@guiav.com.uy<br>(+598) 2203 9897<br>
-							
+
 							Av. Agraciada 2541 Of. 101<br>
 							Montevideo, Uruguay</p>
+
+
 					</div>
 					<div id="auspicios">
 						<h4>Auspician:</h4>
@@ -127,16 +129,13 @@
 							<li><a href="http://www.mgap.gub.uy" target="_blank"><%= image_tag "ministerio.jpg" , height: '45' %></a></li>
 							<li><a href="http://www.smvu.com.uy/" target="_blank"><%= image_tag "smvu.jpg" , height: '45' %></a></li>
 						</ul>
+						<br>
 					</div>
 				</div>
-				
-			</div>
-			<div id="footer-content">		
 				<div id="arrow-up">
 					<a href="#"><i class="fa fa-arrow-circle-up fa-4x"></i></a>
 				</div>
 			</div>
-			
 		</div>
 		<div id="copyright">
 			<p class="copy">© 2014 GuiaV Uruguay. All rights reserved. Developed by <%= image_tag "jetlabs_logo.png" , height: '18', style: "margin-top:-4px;"  %></p>

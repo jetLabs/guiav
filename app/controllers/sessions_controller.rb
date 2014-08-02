@@ -48,6 +48,6 @@ class SessionsController < ApplicationController
 
   def user_destroy
     session[:user_id] = nil
-    redirect_to admin_login_path, notice: "Logged out"
+    redirect_to static_pages_index2_path, notice: "Logged out"
   end
 end

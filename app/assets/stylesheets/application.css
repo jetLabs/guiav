@@ -21,7 +21,7 @@
 }
 
 html,body{
-	background-color: #00FFFF;
+	background-color: #015187;
 }
 
 .modal-open{
@@ -64,7 +64,7 @@ h1,h2,h3{
 
 #header.home{
 	text-align: center;
-	background: url(/assets/bg1.jpg) no-repeat center 190% fixed; 
+	background: no-repeat center 190% fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -125,8 +125,8 @@ h1,h2,h3{
 
 #footer
 {
-	background-color: #f8f8f8;
-	color: #015187;
+	background-color: #015187;
+	color: white;
 	position: relative;
 	text-align: center;
 }
@@ -145,7 +145,7 @@ h1,h2,h3{
 
 #footer a
 {
-	color: #015187;
+	color: white;
 	text-decoration: none;
 }
 
@@ -156,7 +156,7 @@ h1,h2,h3{
 }
 
 #contact i{
-	color: #015187;;
+	color: white;
 	border:1px solid;
 	-moz-border-radius: 50%; 
     -webkit-border-radius: 50%; 
@@ -172,10 +172,9 @@ h1,h2,h3{
 	padding: 5px 5px;
 }
 
-#contact .fbook i:hover, #contact .mail i:hover{
-	color:  #fff;
-	background-color: #015187;
-	border-color: white !important;
+#contact i:hover{
+	color:  #015187;
+	background-color: #fff;
 }
 
 .centered{
@@ -240,7 +239,7 @@ h1,h2,h3{
  	position: fixed;
  	right: 50px;
  	bottom: 60px;
- 	color: #015187 ;
+ 	color: #A9A9A9 ;
  	opacity: 0.7;
  }
 
