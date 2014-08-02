@@ -20,8 +20,10 @@
 </head>
 <body>
 	<div id="wrapper">
-		<div id="header" class="home">
+		<div id="header" class="nav">
+			<%= image_tag "logo.png" , height: '40', style: "float:left; margin-top: 10px; padding-left: 30px;" %>
 			<div class="header-nav">
+
 				<ul>
 					<% if current_user %>
 						<li><a href=""><%= current_user.username %></a></li>
@@ -33,18 +35,7 @@
 					<li><a href="">Help &nbsp;<i class="fa fa-angle-down"></i></a></li>
 				</ul>
 			</div>
-			<div id="logo-header">
-				<%= image_tag "logo.png" , height: '220' %>
-			</div>
-			<div id="licencia" ng-controller="SearchBoxController as searchCtrl">
-				<form class="form-inline search" role="form">
-				  <div class="form-group" >
-				    <input type="text" class="form-control" style="width:600px;" id="exampleInputEmail2" placeholder="What are you looking for?" ng-model="search" >
-				  </div>
-				  <div class="form-group">
-				    <button type="submit" class="btn btn-primary" style=" font-weight: bold;" ng-click="searchMedicament()">Search</button>
-				  </div>
-				 </form>
+			<div id="licencia">
 				<%= link_to 'Upgrade to GuiaV PRO Now', paypal_url, class: "btn btn-outline-inverse btn-lg", style: 'display: none' %> 
 			</div>
 			 
@@ -95,54 +86,9 @@
 	
 		<%= yield %>
 
-		<div id="footer" class="centered">
-
-			<div id="footer-content">
-
-				<h1 id="contact-us">CONTACTENOS</h1>
-				<div id="map-canvas"></div>
-				<div id="footer-bottom">
-					<div id="logo-footer">
-						<%= image_tag "logo_sin_texto.png" , height: '80' %>
-					</div>
-					<div id="contact">
-							<ul>
-								<li class="fbook">
-									<a href="https://www.facebook.com/guiavet" target="_blank"><i class="fa fa-facebook fa-1x">
-
-									</i></a>
-								</li>
-								<li class="mail"><a href="mailto:info@guiav.com.uy"><i class="fa fa-envelope-o fa-1x"></i></a></li>
-								<li class="mail"><a href="https://twitter.com/GuiavUruguay"><i class="fa fa-twitter fa-1x"></i></a></li>
-							</ul>
-							<br>
-							<p>info@guiav.com.uy<br>(+598) 2203 9897<br>
-
-							Av. Agraciada 2541 Of. 101<br>
-							Montevideo, Uruguay</p>
-
-
-					</div>
-					<div id="auspicios">
-						<h4>Auspician:</h4>
-						<ul>
-							<li><a href="http://www.mgap.gub.uy" target="_blank"><%= image_tag "ministerio.jpg" , height: '45' %></a></li>
-							<li><a href="http://www.smvu.com.uy/" target="_blank"><%= image_tag "smvu.jpg" , height: '45' %></a></li>
-						</ul>
-						<br>
-					</div>
-				</div>
-				<div id="arrow-up">
-					<a href="#"><i class="fa fa-arrow-circle-up fa-4x"></i></a>
-				</div>
-			</div>
-		</div>
 		<div id="copyright">
 			<p class="copy">© 2014 GuiaV Uruguay. All rights reserved. Developed by <a href="http://jetlabs.github.io" target="_blank"><%= image_tag "jetlabs_logo.png" , height: '18', style: "margin-top:-4px;"  %></a></p>
 		</div>
-
-	
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
 	<!-- EL RUBY EMBED NO ESTA EN BLANCO !!!! -->	
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>

@@ -1,0 +1,19 @@
+// Place all the styles related to the search_medicaments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.search-box{
+	text-align:center;
+	margin: 50px auto;
+}
+
+.filter-panel{
+	margin: 50px auto 0 auto;
+	width: 70%;
+}
+
+.filter-panel li{
+	list-style: none outside none;
+	padding-left: 20px;
+}
+

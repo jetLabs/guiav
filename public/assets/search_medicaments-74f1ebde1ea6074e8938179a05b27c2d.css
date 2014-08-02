@@ -1,0 +1,17 @@
+/* line 5, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/search_medicaments.css.scss */
+.search-box {
+  text-align: center;
+  margin: 50px auto;
+}
+
+/* line 10, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/search_medicaments.css.scss */
+.filter-panel {
+  margin: 50px auto 0 auto;
+  width: 70%;
+}
+
+/* line 15, /Users/juan/Documents/RubyOnRails/guiav/app/assets/stylesheets/search_medicaments.css.scss */
+.filter-panel li {
+  list-style: none outside none;
+  padding-left: 20px;
+}
