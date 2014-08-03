@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140802154308) do
+ActiveRecord::Schema.define(version: 20140802153851) do
 
   create_table "administradors", force: true do |t|
     t.string   "usuario"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20140802154308) do
 
   create_table "categoria", force: true do |t|
     t.string   "nombre"
+    t.integer  "parent_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -44,16 +45,6 @@ ActiveRecord::Schema.define(version: 20140802154308) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "medicamento_animals", force: true do |t|
-    t.integer  "animal_id"
-    t.integer  "medicamento_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "medicamento_animals", ["animal_id"], name: "index_medicamento_animals_on_animal_id"
-  add_index "medicamento_animals", ["medicamento_id"], name: "index_medicamento_animals_on_medicamento_id"
 
   create_table "medicamentos", force: true do |t|
     t.string   "nombre"
