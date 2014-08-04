@@ -22,10 +22,17 @@
 
 html,body{
 	background-color: #015187;
+	height:100%;
+	min-height: 100%;
 }
 
 .modal-open{
 	margin-right: 0px !important;
+}
+
+#wrapper{
+	min-height:100%;
+	position:relative;
 }
 
 
@@ -135,6 +142,7 @@ h1,h2,h3{
 	color: white;
 	position: relative;
 	text-align: center;
+
 }
 
 #footer h2{
@@ -304,12 +312,12 @@ h1,h2,h3{
 }
 
 .animals img {
-        vertical-align: bottom;
-        display: table-cell;
-    }​
+   vertical-align: bottom;
+}​
 
 #wrapper-lab{
 	width: 600px;
+
 	margin: 0 auto;
 }
 /* Login */

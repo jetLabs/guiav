@@ -9,66 +9,58 @@
 	 </form>
 </div>
 
- <div class="row">
- 	<div class="col-md-3">
- 		<div class="panel panel-primary filter-panel">
- 			<div class="panel-heading">
-			    <h4 class="panel-title">Laboratorios</h3>
-			  </div>
-	 		<ul>
-	 			<li><input type="checkbox" value="Bike">Lab1</li>
-	 			<li><input type="checkbox" value="Bike">Lab2</li>
-	 			<li><input type="checkbox" value="Bike">Lab3</li>
-	 			<li><input type="checkbox" value="Bike">Lab4</li>
-	 			<li><input type="checkbox" value="Bike">Lab5</li>
-	 		</ul>
- 		</div>
- 		
- 	</div>
- 	<div class="col-md-9">
- 		<div id="table">
-			<table class="table table-striped">
-				<thead>
-					<tr>
-						<th>Nombre</th>
-						<th>Nombre</th>
-						<th>Nombre</th>
-						<th>Nombre</th>
-						<th>Nombre</th>
-						<th>Nombre</th>
-						<th>Nombre</th>
-						<th>Nombre</th>
-					</tr>
-				</thead>
-				<tbody>
-					<% 20.times.each do |i| %>
-						<% med = "Medicamento#{i}" %>
+<div class="search-results">
+	<div class="row">
+	 	<div class="col-md-3">
+	 		<div class="panel panel-primary filter-panel">
+	 			<div class="panel-heading">
+				    <h4 class="panel-title">Laboratorios</h3>
+				  </div>
+		 		<ul>
+		 			<li><input type="checkbox" value="Bike">Lab1</li>
+		 			<li><input type="checkbox" value="Bike">Lab2</li>
+		 			<li><input type="checkbox" value="Bike">Lab3</li>
+		 			<li><input type="checkbox" value="Bike">Lab4</li>
+		 			<li><input type="checkbox" value="Bike">Lab5</li>
+		 		</ul>
+	 		</div>
+	 		
+	 	</div>
+	 	<div class="col-md-9">
+	 		<div id="table">
+				<table class="table table-striped">
+					<thead>
 						<tr>
-							<td><%= med %></td>
-							<td><%= med %></td>
-							<td><%= med %></td>
-							<td><%= med %></td>
-							<td><%= med %></td>
-							<td><%= med %></td>
-							<td><%= med %></td>
-							<td>
-								<ul>
-									<li class="animals"><%= image_tag "bovinos.png" , height: '25',title: "Bovinos" %></li>
-									<li class="animals"><%= image_tag "aves.png" , height: '20',title: "Aves" %></li>
-									<li class="animals"><%= image_tag "abejas.png" , height: '17',title: "Abejas" %></li>
-									<li class="animals"><%= image_tag "porcinos.png" , height: '20',title: "Suinos" %></li>
-									<li class="animals"><%= image_tag "equinos.png" , height: '30',title: "Equinos" %></li>
-									<li class="animals"><%= image_tag "felinos.png" , height: '20',title: "Felinos" %></li>
-									<li class="animals"><%= image_tag "conejos.png" , height: '17',title: "Conejos" %></li>
-									<li class="animals"><%= image_tag "caninos.png" , height: '23',title: "Caninos" %></li>
-									<li class="animals"><%= image_tag "caprinos.png" , height: '23',title: "Caprinos" %></li>
-									<li class="animals"><%= image_tag "ovinos.png" , height: '23',title: "Ovinos" %></li>
-								</ul>
-							 </td>
+							<th>Nombre</th>
+							<th>Laboratorio</th>
+							<th>Tipo</th>
+							<th>Categoria</th>
+							<th>Especies</th>
+							<th></th>
 						</tr>
-					<% end %>
-				</tbody>
-			</table>
-		</div>
- 	</div>
- </div>
+					</thead>
+					<tbody>
+						<% Medicamento.all.each do |medicamento| %>
+							<tr>
+								<td><%= medicamento.nombre %></td>
+								<td><%= medicamento.laboratorio.nombre %></td>
+								<td></td>
+								<td></td>
+								<td>
+									<ul>
+										<% medicamento.animals.each do |animal| %>
+											<li class="animals"><%= image_tag "#{animal.nombre.downcase}.png" , height: '25',title: "Bovinos" %></li>
+										<% end %>
+									</ul>
+								 </td>
+								<td><a href="">Ver mas</a></td>
+								
+							</tr>
+						<% end %>
+					</tbody>
+				</table>
+			</div>
+	 	</div>
+	 </div>
+</div>
+ 
