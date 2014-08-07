@@ -12,16 +12,29 @@
 <div class="search-results">
 	<div class="row">
 	 	<div class="col-md-3">
-	 		<div class="panel panel-primary filter-panel">
-	 			<div class="panel-heading">
-				    <h4 class="panel-title">Laboratorios</h3>
-				  </div>
+	 		<div class="panel filter-panel">
+	 			<h4>Refine by</h4>
+	 			<hr>
+				<strong>Laboratorio</strong>
 		 		<ul>
-		 			<li><input type="checkbox" value="Bike">Lab1</li>
-		 			<li><input type="checkbox" value="Bike">Lab2</li>
-		 			<li><input type="checkbox" value="Bike">Lab3</li>
-		 			<li><input type="checkbox" value="Bike">Lab4</li>
-		 			<li><input type="checkbox" value="Bike">Lab5</li>
+		 			<% Laboratorio.all.each do |laboratorio| %>
+			 			<li><input type="checkbox" value="Bike"><%= laboratorio.nombre %></li>
+		 			<% end %>
+		 		</ul>
+		 		<hr>
+				<strong>Animal</strong>
+		 		<ul>
+		 			<% Animal.all.each do |animal| %>
+			 			<li><input type="checkbox" value="Bike"><%= animal.nombre %></li>
+		 			<% end %>
+		 		</ul>
+		 		<hr>
+				<strong>Tipo</strong>
+		 		<ul>
+		 		</ul>
+		 		<hr>
+				<strong>Categoria</strong>
+		 		<ul>
 		 		</ul>
 	 		</div>
 	 		

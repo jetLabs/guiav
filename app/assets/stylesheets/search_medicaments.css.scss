@@ -12,14 +12,26 @@
 	width: 70%;
 }
 
+.filter-panel{
+	padding: 5px 10px;
+	border: 1px solid #e7e7e7;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.filter-panel h4{
+	color: #999999;
+}
+
 .filter-panel li{
 	list-style: none outside none;
-	padding-left: 20px;
 }
 
 .copyright{
-	position: absolute !important;
-	left:0 !important;
-	bottom:0 !important;
+	position: absolute ;
+	left:0 ;
+	bottom:0 ;
+	width: 100%;
 }
 
